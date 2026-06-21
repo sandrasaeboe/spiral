@@ -21,7 +21,7 @@ function MiniBar({ value }) {
 
 const S = {
   page:  { background: '#0F1C1C', minHeight: '100vh', overflowY: 'auto' },
-  inner: { padding: '56px 24px 160px' },
+  inner: { padding: '88px 24px 160px' },
   h:     { fontSize: 36, fontWeight: 700, letterSpacing: '-0.05em', lineHeight: 1.04, color: '#EEEAE3', marginBottom: 24 },
   lbl:   { fontSize: 10, fontWeight: 700, color: 'rgba(238,234,227,0.25)', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 12 },
   card:  { padding: 18, borderRadius: 20, background: 'rgba(255,255,255,0.04)', boxShadow: '0 1px 0 rgba(255,255,255,0.07) inset, 0 0 0 1px rgba(255,255,255,0.06)' },

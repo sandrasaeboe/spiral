@@ -1,4 +1,5 @@
-const KEY = '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';
+const KEY = process.env.REACT_APP_GROQ_API_KEY;
+
 
 export async function analyzeThought(text) {
   const prompt = `Du är en KBT-terapeut. Analysera följande tanke och svara ENDAST med ett JSON-objekt, inga förklaringar, inga backticks.

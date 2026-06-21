@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0F1C1C;
+  color: #EEEAE3;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+::selection { background: rgba(126,200,200,0.25); }
+button { font-family: inherit; border: none; cursor: pointer; }
+textarea, input { font-family: inherit; }
+::-webkit-scrollbar { width: 0; }
+
+@keyframes orbFloat {
+  0%,100% { transform: translateX(-50%) translateY(0) scale(1); }
+  40%      { transform: translateX(-50%) translateY(-16px) scale(1.03); }
+  70%      { transform: translateX(-50%) translateY(8px) scale(0.97); }
+}
+@keyframes orbFloatFree {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-12px); }
+}
+@keyframes fadeIn   { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp  { from { transform: translateY(48px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes loadPulse {
+  0%,100% { transform: scale(0.88); opacity: 0.7; }
+  50%     { transform: scale(1.12); opacity: 1; }
+}

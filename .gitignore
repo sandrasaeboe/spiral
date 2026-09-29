@@ -1,3 +1,4 @@
 .env
 .env.save
 node_modules
+.DS_Store
